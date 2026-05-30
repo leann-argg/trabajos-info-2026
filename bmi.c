@@ -11,18 +11,27 @@ int main(){
 	scanf("%f", &altura);
 	
 	imc=peso/(altura*altura);
-	
+
 	printf("Su imc es: %.2f\n", imc);{
 		if(imc<18.5){
-			printf("Condicion: Bajo peso");
+			printf("Condicion: Bajo peso\n");
 		}else if(imc<24.9){
-			printf("Condicion: Normal");
+			printf("Condicion: Normal :)\n");
 		}else if(imc<29.9){
-			printf("Condicion: Sobrepeso");
+			printf("Condicion: Sobrepeso :|\n");
 		}else if(imc>=29.9){
-			printf("Condicion: Obesidad");
+			printf("Condicion: Obesidad :(\n");
 		}
 	}
+	printf("/////////////////////////////\n");
+	printf("//    INDICE   | CONDICION //\n");
+	printf("//    <18.5    | Bajo peso //\n");
+	printf("// 18.5 a 24.9 | Normal    //\n");
+	printf("//   25 a 29.9 | Sobrepeso //\n");
+	printf("//        >=30 | Obesidad  //\n");
+	printf("/////////////////////////////");
 	
+	
+
 	return 0;
 }
